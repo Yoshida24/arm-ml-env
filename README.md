@@ -12,6 +12,7 @@ arm環境での機械学習環境。2022年4月版。
 - numpy
 - opencv
 - cython
+- matplotlib
 - and more...
 
 ## インストール
@@ -114,6 +115,7 @@ yamlファイルから仮想環境を作成
 % conda install tornado psutil xgboost cloudpickle pytest
 % conda install -c conda-forge librosa -y
 % conda install -c conda-forge opencv
+% conda install -c conda-forge matplotlib 
 
 # yamlに環境設定をexport
 % conda env export | grep -v "^prefix: " > arm_ml_env_base.yml

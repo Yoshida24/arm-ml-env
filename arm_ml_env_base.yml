@@ -173,6 +173,7 @@ dependencies:
   - sqlite=3.38.2=h7e3ccbd_0
   - stack_data=0.2.0=pyhd8ed1ab_0
   - svt-av1=0.9.1=h07bb92c_0
+  - tbb=2021.5.0=h525c30c_0
   - threadpoolctl=3.1.0=pyh8a188c0_0
   - tinycss2=1.1.1=pyhd8ed1ab_0
   - tk=8.6.12=he1e0b03_0
