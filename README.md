@@ -27,6 +27,8 @@ arm環境での機械学習環境。2022年4月版。
 % pyhton -V
 # 3.10.4
 % python demo/numpy_demo.py
+# [1 2 3 4 5 6]
+# <class 'numpy.ndarray'>
 ```
 
 ## packageを追加
