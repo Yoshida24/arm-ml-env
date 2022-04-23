@@ -21,6 +21,14 @@ arm環境での機械学習環境。2022年4月版。
 % conda activate arm_ml_env_base
 ```
 
+デモコードを実行
+
+```zsh
+% pyhton -V
+# 3.10.4
+% python demo/numpy_demo.py
+```
+
 ## packageを追加
 
 ```zsh
@@ -42,6 +50,12 @@ arm環境での機械学習環境。2022年4月版。
 % conda activate machine_learning
 ```
 
+インストールされたパッケージを確認
+
+```zsh
+% conda list
+```
+
 仮想環境作成
 
 ```zsh
@@ -61,12 +75,6 @@ activateした仮想環境に依存性をインストール（複数）
 
 ```zsh
 % conda remove -n arm_ml_env_base --all
-```
-
-インストールされたパッケージを確認
-
-```zsh
-% conda list
 ```
 
 yamlファイルから仮想環境を作成
