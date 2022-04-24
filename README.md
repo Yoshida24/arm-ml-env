@@ -44,21 +44,27 @@ arm環境に機械学習系packageを一通り導入するためのminiforge用�
 
 ## conda (Miniforge) チートシート
 
+独断と偏見でまとめたよく使う操作。
+
 | ユースケース | コマンド |
+| --- | --- |
 | 仮想環境一覧を表示 | `conda info -e` |
 | 仮想環境をactivate | `conda activate machine_learning` |
 | インストールされたパッケージを確認 | `conda list` |
 | 仮想環境を作成 | `conda create -n machine_learning python=3.10;` |
-| activateした仮想環境に依存性をインストール(リポジトリ指定) | `conda install numpy decorator attrs cython` <br> `conda install -c conda-forge scikit-learn -y` |
-| activateした仮想環境に依存性をインストール | `conda install numpy decorator attrs cython |
-| 仮想環境削除 | conda remove -n arm_ml_env_base --all |
-| yamlファイルから仮想環境を作成 | conda env create -f arm_ml_env_base.yml |
+| activateした仮想環境に依存性をインストール(リポジトリ指定) | `conda install -c conda-forge scikit-learn -y` |
+| activateした仮想環境に依存性をインストール | `conda install numpy |
+| 仮想環境削除 | `conda remove -n arm_ml_env_base --all` |
+| yamlファイルから仮想環境を作成 | `conda env create -f arm_ml_env_base.yml` |
 | 仮想環境をymlファイルにexport(`prefix`を消去, 推奨) | `conda env export | grep -v "^prefix: " > arm_ml_env_base.yml` |
 | 仮想環境をymlファイルにexport | `conda env export` |
 
-- **activateした仮想環境に依存性をインストールについて**
-  - `-c`: 省略可. リポジトリ(`channel`)を指定. ex. `conda-forge`, `pytorch`, etc...
-  - miniforgeはarm対応を謳っており、arm系のマシンに依存性をインストールできないときは`-c conda-forge`を追加するとarm用の配布packageが手に入ることがある
+**`conda install`のオプション引数について**
+
+| 引数 | 詳細 |
+| --- | --- |
+| `-c` | 省略可. リポジトリ(`channel`)を指定. ex. `conda-forge`, `pytorch`, etc... <br>arm用のpackageは`-c conda-forge`から手に入れやすい.<br>miniforgeはarm対応を謳っているリポジトリであるため. |
+| `-y` | 省略可. 途中でいろいろ聞かれる系の質問に全てyesで答える |
 
 ## 環境構築手順の記録
 
