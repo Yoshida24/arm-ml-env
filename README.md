@@ -1,5 +1,7 @@
 # arm-ml-env
-arm環境に機械学習系packageを一通り導入するminiforge用設定ファイル。2022年4月版。  
+arm環境に機械学習系packageを一通り導入するminiforge用設定ファイル。  
+pythonの学習環境を作るときにはまることが多かったため、ハマらないために作った。
+2022年4月版。  
 
 **前提**
 - M1 Mac
